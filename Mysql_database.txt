@@ -1,0 +1,28 @@
+CREATE TABLE student_detailsinfo.st_detailsinfo (
+    S_Id int AUTO_INCREMENT,
+    S_Name VARCHAR(255) NOT NULL,
+    S_Age int,
+    S_MobileNo long,
+    S_Course varchar(50),
+    PRIMARY KEY (S_Id)
+)  ENGINE=INNODB;
+
+
+
+CREATE TABLE student_detailsinfo.st_courseinfo (
+    S_Id int AUTO_INCREMENT,
+    S_Course varchar(50),
+    PRIMARY KEY (S_Id)
+)  ENGINE=INNODB;
+
+
+#insert into student_detailsinfo.st_detailsinfo (S_Id,S_Name,S_Age,S_MobileNo,S_Course) Values (1,'Dilliprasad',25,9892301025,'ECE')
+
+select * from student_detailsinfo.st_detailsinfo;
+
+select * from student_detailsinfo.st_courseinfo;
+
+#update student_detailsinfo.st_detailsinfo set S_Age=26 where S_Id=1;
+
+
+#delete from student_detailsinfo.st_detailsinfo order by S_Id 18;
